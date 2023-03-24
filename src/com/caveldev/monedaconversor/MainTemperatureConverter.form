@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.caveldev.monedaconversor.MainTemperatureConverter">
+  <grid id="27dc6" binding="panelTemperatureConverter" layout-manager="GridLayoutManager" row-count="11" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="65" y="12" width="400" height="355"/>
+    </constraints>
+    <properties>
+      <background color="-328966"/>
+      <doubleBuffered value="false"/>
+      <maximumSize width="400" height="200"/>
+      <minimumSize width="400" height="200"/>
+      <preferredSize width="400" height="200"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="c858c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14540254"/>
+          <font name="Impact" size="18" style="0"/>
+          <text value="CONVERTIDOR DE TEMPERATURA"/>
+        </properties>
+      </component>
+      <component id="fd719" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14540254"/>
+          <text value="Ingrese el valor a convertir"/>
+        </properties>
+      </component>
+      <component id="7039a" class="javax.swing.JComboBox" binding="boxLeft">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1249039"/>
+          <foreground color="-14540254"/>
+        </properties>
+      </component>
+      <component id="940a9" class="javax.swing.JTextField" binding="textInputTemperature">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="25"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="c23b1" class="javax.swing.JButton" binding="btnConvert">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <background color="-1249039"/>
+          <focusPainted value="true"/>
+          <font name="Impact" size="14" style="0"/>
+          <foreground color="-14540254"/>
+          <rolloverEnabled value="true"/>
+          <selected value="false"/>
+          <text value="Convertir"/>
+        </properties>
+      </component>
+      <component id="ce440" class="javax.swing.JComboBox" binding="boxRight">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1249039"/>
+          <foreground color="-14540254"/>
+        </properties>
+      </component>
+      <component id="f5a61" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="De"/>
+        </properties>
+      </component>
+      <component id="b920f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="a"/>
+        </properties>
+      </component>
+      <vspacer id="e3972">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="3e98d">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="69236">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="9b8ca">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="9501e" class="javax.swing.JButton" binding="btnBackMenu">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1249039"/>
+          <foreground color="-15840131"/>
+          <text value="&lt;&lt; Volver"/>
+        </properties>
+      </component>
+      <vspacer id="5cc83">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="26453" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Ink Free" size="14" style="0"/>
+          <text value="© CavelDev 2023"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
