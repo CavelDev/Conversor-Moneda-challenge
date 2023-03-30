@@ -56,7 +56,7 @@ public class FirstWindows extends JFrame {
 
     private void initCurrencyConverter(){
         MainCurrencyConverter windowMCC = new MainCurrencyConverter();
-        windowMCC.setSize(width, height+100);
+        windowMCC.setSize(400, 350);
         windowMCC.setLocation(this.getLocation());
         windowMCC.add(windowMCC.panelConversorMoneda);
         windowMCC.setTitle("Convertidor de Divisas");
