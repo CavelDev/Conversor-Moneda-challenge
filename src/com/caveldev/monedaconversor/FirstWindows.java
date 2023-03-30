@@ -1,13 +1,15 @@
 package com.caveldev.monedaconversor;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
+import java.awt.event.*;
+import java.net.URL;
 
-public class FirstWindows extends JFrame{
+public class FirstWindows extends JFrame {
     protected JPanel panelFirstWindow;
     private JButton btnStartConverter;
     private JComboBox boxConverterOptions;
+    private JLabel githubUserLabel;
 
     private int width = 400, height = 200;
 
@@ -27,17 +29,25 @@ public class FirstWindows extends JFrame{
                 checkSelectedConverter();
             }
         });
+
+        //Boton GitHub
+        githubUserLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                //Acceso a Extras
+                Extras extras = new Extras();
+                extras.openLinkGithub();
+            }
+        });
     }
 
 
     private void checkSelectedConverter(){
         switch (boxConverterOptions.getSelectedIndex()){
             case 0:
-                System.out.println("divisas");
                 initCurrencyConverter();
                 break;
             case 1:
-                System.out.println("temperatura");
                 initTemperatureConverter();
                 break;
         }
@@ -47,9 +57,9 @@ public class FirstWindows extends JFrame{
     private void initCurrencyConverter(){
         MainCurrencyConverter windowMCC = new MainCurrencyConverter();
         windowMCC.setSize(width, height+100);
+        windowMCC.setLocation(this.getLocation());
         windowMCC.add(windowMCC.panelConversorMoneda);
         windowMCC.setTitle("Convertidor de Divisas");
-        windowMCC.setLocation(this.getLocation());
         windowMCC.setResizable(false);
         windowMCC.setVisible(true);
         this.dispose();
@@ -58,10 +68,10 @@ public class FirstWindows extends JFrame{
     private void initTemperatureConverter(){
         MainTemperatureConverter windowMTC = new MainTemperatureConverter();
         windowMTC.setSize(width-100, height+150);
+        windowMTC.setLocation(this.getLocation());
         windowMTC.add(windowMTC.panelTemperatureConverter);
         windowMTC.setTitle("Convertidor de Temperatura");
         windowMTC.setResizable(false);
-        windowMTC.setLocation(this.getLocation());
         windowMTC.setVisible(true);
         this.dispose();
     }

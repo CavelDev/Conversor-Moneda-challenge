@@ -1,10 +1,7 @@
 package com.caveldev.monedaconversor;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
 
 public class MainCurrencyConverter extends JFrame{
 
@@ -14,6 +11,7 @@ public class MainCurrencyConverter extends JFrame{
     protected JPanel panelConversorMoneda;
     private JLabel valorText;
     private JButton btnBackMenu;
+    private JLabel githubUserLabel;
     static double[] valueCurrency = {
             24.87,
             26.13,
@@ -37,6 +35,18 @@ public class MainCurrencyConverter extends JFrame{
             "Peso Colombiano - COP",
     };
 
+    static String[] nameCurrencyAbbreviated = {
+            " USD",
+            " EUR",
+            " JPY",
+            " GBP",
+            " BRL",
+            " TRY",
+            " CLP",
+            " MXN",
+            " COP",
+    };
+
     //Metodo para verificar las monedas seleccionadas
     public void checkExchangeRate(){
         int i;
@@ -54,7 +64,7 @@ public class MainCurrencyConverter extends JFrame{
                     //Efectua la conversion segun el indice seleccionado
                     if (nameCurrency[i] == boxExchangeCurrencies.getItemAt(indexBoxEC)) {
                         System.out.println(nameCurrency[i] +" = "+ valueCurrency[i]);
-                        valorText.setText(String.valueOf(String.format("%.2f", outputAmount / valueCurrency[i])));
+                        valorText.setText(String.valueOf(String.format("%.2f", outputAmount / valueCurrency[i])) + nameCurrencyAbbreviated[i]);
                     }else {
                         JOptionPane.showMessageDialog(btnConvert, "Ocurrió un error, por favor reportar este incidente");
                     }
@@ -97,6 +107,16 @@ public class MainCurrencyConverter extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 backMenu();
+            }
+        });
+
+        //Boton GitHub
+        githubUserLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                //Acceso a Extras
+                Extras extras = new Extras();
+                extras.openLinkGithub();
             }
         });
     }

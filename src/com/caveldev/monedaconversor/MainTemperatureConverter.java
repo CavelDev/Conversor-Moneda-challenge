@@ -1,10 +1,7 @@
 package com.caveldev.monedaconversor;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
 
 public class MainTemperatureConverter extends JFrame{
     protected JPanel panelTemperatureConverter;
@@ -13,6 +10,7 @@ public class MainTemperatureConverter extends JFrame{
     private JComboBox boxRight;
     private JButton btnConvert;
     private JButton btnBackMenu;
+    private JLabel githubUserLabel;
     private double outputTemperature;
     private double calculating;
 
@@ -53,6 +51,16 @@ public class MainTemperatureConverter extends JFrame{
             }
         });
         textInputTemperature.addKeyListener(new KeyAdapter() {
+        });
+
+        //Boton GitHub
+        githubUserLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                //Acceso a Extras
+                Extras extras = new Extras();
+                extras.openLinkGithub();
+            }
         });
     }
 

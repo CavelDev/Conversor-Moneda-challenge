@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AppConversorMoneda:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AppConversorMoneda_jar</output-path>
+    <root id="archive" name="AppConversorMoneda_jar.jar">
+      <element id="module-output" name="AppConversorMoneda" />
+    </root>
+  </artifact>
+</component>
