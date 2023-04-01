@@ -4,12 +4,16 @@ Este es un pequeño desafio que forma parte de la formación Java Back-End del p
 
 El lenguaje de programación utilizado fue JAVA y la interfaz grafica fue creada con la biblioteca Java SWING.
 
+![App Screenshot](https://raw.githubusercontent.com/CavelDev/Conversor-Moneda-challenge/master/Screenshots/Menu.png)
+
 
 
 
 ## Conversor de Divisas
 
 La primera parte de este desafio es crear un programa que debe contar con la capacidad minima de realizar conversiones de divisas de nuestra moneda local a cualquier otra moneda internacional.
+
+![App Screenshot](https://raw.githubusercontent.com/CavelDev/Conversor-Moneda-challenge/master/Screenshots/Divisas.png)
 
 La actual versión 1.1 del programa permite relizar la conversión de Lempiras (HNL) a:
 - Dolar (USD) 
@@ -24,6 +28,8 @@ La actual versión 1.1 del programa permite relizar la conversión de Lempiras (
 - Las anteriores divisas a Lempiras (HNL).
 ## Conversor de Temperatura
 La segunda parte del desafio consistia en integrar un conversor de unidades extra. En este caso un conversor de temperatura.
+
+![App Screenshot](https://raw.githubusercontent.com/CavelDev/Conversor-Moneda-challenge/master/Screenshots/Temperatura.png)
 
 **Funciones**
 - Convertir de grados Celsius a grados Farenheit y Kelvin
